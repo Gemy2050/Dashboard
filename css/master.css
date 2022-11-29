@@ -280,6 +280,7 @@ background-color: rgb(34 197 94 / 20%);
 }
 .news .row:not(:last-child) {
   border-bottom: 1px solid #EEE;
+  margin: 5px 0;
 }
 @media(max-width: 767px) {
   .news .row {
@@ -304,4 +305,21 @@ background-color: rgb(34 197 94 / 20%);
 }
 .news .row .info {
   flex: 1;
+}
+.tasks .row:not(:last-child) {
+  border-bottom: 1px solid #EEE;
+}
+.tasks .done {
+  opacity: .5;
+}
+.tasks .row i {
+  cursor: pointer;
+  transition: .3s ease-in-out all;
+}
+.tasks .row i:hover {
+  color: red;
+}
+.tasks .done .info h3,
+.tasks .done .info p {
+  text-decoration: line-through;
 }
