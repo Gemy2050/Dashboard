@@ -38,6 +38,18 @@
 .p-20 {
   padding: 20px;
 }
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-15 {
+  padding-top: 15px;
+}
+.pb-10 {
+  padding-bottom: 10px;
+}
+.pb-15 {
+  padding-bottom: 15px;
+}
 .m-0 {
   margin: 0;
 }
@@ -56,6 +68,9 @@
 .mt-20 {
   margin-top: 20px;
 }
+.mr-10 {
+  margin-right: 10px;
+}
 .mb-5 {
   margin-bottom: 5px;
 }
@@ -64,6 +79,9 @@
 }
 .mb-20 {
   margin-bottom: 20px;
+}
+.mb-25 {
+  margin-bottom: 25px;
 }
 /* Start Color */
 .bg-white {
@@ -80,6 +98,9 @@
 }
 .bg-blue {
   background-color: var(--blue-color);
+}
+.bg-red {
+  background-color: var(--red-color);
 }
 .c-black {
   color: black;
