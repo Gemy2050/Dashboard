@@ -623,20 +623,20 @@ background-color: rgb(34 197 94 / 20%);
   transform: scale(0) rotate(360deg);
   transition: .3s;
 }
-.backup-manger input[type="radio"] {
+.backup-manager input[type="radio"] {
   -webkit-appearance: none;
   appearance: none;
 }
-.backup-manger .date label {
+.backup-manager .date label {
   position: relative;
   padding-left: 40px;
   cursor: pointer;
   font-size: 18px;
 }
-.backup-manger .date input:checked + label::after {
+.backup-manager .date input:checked + label::after {
   background-color: var(--blue-color);
 }
-.backup-manger .date label::before {
+.backup-manager .date label::before {
   content: '';
   position: absolute;
   width: 18px;
@@ -646,7 +646,7 @@ background-color: rgb(34 197 94 / 20%);
   left: 0;
   background-color: white;
 }
-.backup-manger .date label::after {
+.backup-manager .date label::after {
   content: '';
   position: absolute;
   width: 12px;
@@ -655,5 +655,24 @@ background-color: rgb(34 197 94 / 20%);
   background-color: white;
   left: 5px;
   top: 5px;
+}
+.backup-manager .servers .server {
+  border: 2px solid #EEE;
+  cursor: pointer;
+}
+.backup-manager .servers input:checked + .server {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+}
+.backup-manager .servers .server label {
+  display: block;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  padding: 20px;
+}
+.backup-manager .servers .server i {
+  display: block;
+  margin-bottom: 10px;
 }
 /* End Settings */

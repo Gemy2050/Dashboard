@@ -162,6 +162,9 @@
 .border-eee {
   border: 1px solid #eee;
 }
+.b-bottom-eee {
+  border-bottom: 1px solid #EEE;
+}
 /* Start Width */
 .w-full {
   width: 100%;
