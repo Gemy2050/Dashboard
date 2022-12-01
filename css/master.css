@@ -567,4 +567,93 @@ background-color: rgb(34 197 94 / 20%);
   cursor: no-drop;
   width: calc(100% - 80px);
 }
+.settings-page .security > div:not(:last-child) {
+  border-bottom: 1px solid #EEE;
+}
+.settings-page .social-info i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px 0 0 6px;
+  border-right: none;
+}
+.settings-page .social-info input {
+  border-radius: 0 6px 6px 0;
+  height: 40px;
+}
+.settings-page .social-info > div:focus-within i{
+  color: black;
+}
+.settings-page .widgets input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.settings-page .widgets input:checked + label::after {
+  transform: scale(1);
+}
+.settings-page .widgets label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.settings-page .widgets label::before,
+.settings-page .widgets label::after {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  left: 0;
+  top: 2px;
+}
+.settings-page .widgets label::before {
+  content: '';
+  border: 2px solid var(--grey-color);
+}
+.settings-page .widgets label::after {
+  content: '\f00c';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  background-color: var(--blue-color);
+  color: white;
+  font-size: 12px;
+  border: 2px solid var(--blue-color);
+  transform: scale(0) rotate(360deg);
+  transition: .3s;
+}
+.backup-manger input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.backup-manger .date label {
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.backup-manger .date input:checked + label::after {
+  background-color: var(--blue-color);
+}
+.backup-manger .date label::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--blue-color);
+  left: 0;
+  background-color: white;
+}
+.backup-manger .date label::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  left: 5px;
+  top: 5px;
+}
 /* End Settings */
