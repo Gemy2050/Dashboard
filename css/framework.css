@@ -153,6 +153,12 @@
 .b-none {
   border: none;
 }
+.border-ccc {
+  border: 1px solid #ccc;
+}
+.border-eee {
+  border: 1px solid #eee;
+}
 /* Start Width */
 .w-full {
   width: 100%;

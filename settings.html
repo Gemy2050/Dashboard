@@ -83,9 +83,43 @@
         </div>
       </div>
       <!-- End Head -->
-      <!-- Start Wrapper -->
       <h1 class="p-relative">Settings</h1>
-
+      <div class="settings-page m-20 d-grid gap-20">
+        <!-- Start Site Control -->
+        <div class="bg-white p-20 rad-10">
+          <h2 class="m-0 mb-10">Site Control</h2>
+          <p class="m-0 c-grey mb-20">Control The Website If There Is Maintenance</p>
+          <div class="between-flex mb-20">
+            <div>
+              <span>Website Control</span>
+              <p class="c-grey fs-14 mt-5">Open/Close Website And Type The Reason</p>
+            </div>
+            <div style="line-height: 0">
+                <label>
+                  <input type="checkbox" class="toggle-checkbox" checked>
+                  <div class="toggle-switch"></div>
+                </label>
+            </div>
+          </div>
+          <textarea class="close-message p-20 w-full rad-6" placeholder="Close Message Content"></textarea>
+        </div>
+        <!-- End Site Control -->
+        <!-- Start General Info -->
+        <div class="p-20 bg-white rad-10">
+          <h2 class="m-0 mb-10">General Info</h2>
+          <p class="m-0 c-grey mb-20">General Information About Your Account</p>
+          <form action="">
+            <label class="mb-5 d-block c-grey fs-14 mt-20">First Name</label>
+            <input type="text" placeholder="First Name" class="p-10 rad-6 border-eee w-full">
+            <label class="mb-5 d-block c-grey fs-14 mt-20">Last Name</label>
+            <input type="text" placeholder="Last Name" class="p-10 rad-6 border-eee w-full">
+            <label class="mb-5 d-block c-grey fs-14 mt-20">Email</label>
+            <input type="email" value="mo@mail.com" class="p-10 rad-6 border-eee w-full c-grey bg-eee mr-10" disabled>
+            <a href="" class="c-blue">Change</a>
+          </form>
+        </div>
+        <!-- ُEnd General Info -->
+      </div>
     </div>
   </div>
 </body>
