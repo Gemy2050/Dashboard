@@ -660,6 +660,12 @@ background-color: rgb(34 197 94 / 20%);
   border: 2px solid #EEE;
   cursor: pointer;
 }
+@media(max-width: 767px) {
+  .backup-manager .servers {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 .backup-manager .servers input:checked + .server {
   border-color: var(--blue-color);
   color: var(--blue-color);
