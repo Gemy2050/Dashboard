@@ -198,4 +198,7 @@
   .block-mobile {
     display: block;
   }
+  .dir-column-mobile {
+    flex-direction: column;
+  }
 }
