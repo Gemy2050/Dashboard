@@ -198,6 +198,11 @@ ul {
   margin-left: 20px;
   margin-top: -32px;
 }
+@media(max-width: 767px) {
+  .wrapper .welcome .avatar {
+    margin-left: 0;
+  }
+}
 .welcome .body {
   border-top: 1px solid #EEE;
   border-bottom: 1px solid #EEE;
@@ -729,8 +734,10 @@ background-color: rgb(34 197 94 / 20%);
 .profile-page .info-box .toggle-checkbox:checked+.toggle-switch::before {
   left: 62px;
 }
+@media(min-width: 992px) {
 .profile-page .avatar-box {
-  width: 300px;
+    width: 300px;
+  }
 }
 @media(min-width: 768px) {
   .profile-page .avatar-box {
@@ -760,9 +767,9 @@ background-color: rgb(34 197 94 / 20%);
   .profile-page .overview {
     padding: 10px;
   }
-    .profile-page .avatar-box {
-      width: 100%;
-    }
+  .profile-page .avatar-box {
+    width: 100%;
+  }
   .profile-page .info-box .box > div {
     min-width: 0;
     width: 100%;
@@ -774,5 +781,45 @@ background-color: rgb(34 197 94 / 20%);
     .profile-page .info-box .box {
       padding: 20px 0;
     }
+}
+@media(max-width: 767px) {
+  .other-data {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .other-data .skills {
+    width: 100%;
+    margin: 0;
+  }
+  .other-data .activities {
+    width: 100%;
+    margin: 0;
+  }
+  .other-data .activities .activity {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .other-data .activities img {
+    margin: 0;
+  }
+  .other-data .activities .activity p {
+    font-size: 14px;
+  }
+  .other-data .activities .date {
+    margin: auto;
+  }
+}
+.other-data .skills {
+  flex-grow: 1;
+}
+.other-data .activities {
+  flex-grow: 2;
+}
+.other-data .activities img {
+  width: 60px;
+}
+.other-data .activities .activity .date {
+  margin-left: auto;
+  text-align: center;
 }
 /* End Profile */
