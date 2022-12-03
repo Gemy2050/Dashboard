@@ -703,7 +703,7 @@ background-color: rgb(34 197 94 / 20%);
 /* End Settings */
 /* Start Profile */
 .profile-page {
-  max-width: 100%;
+  margin: 15px;
 }
 .profile-page .avatar-box .level {
   overflow: hidden;
@@ -764,8 +764,13 @@ background-color: rgb(34 197 94 / 20%);
       width: 100%;
     }
   .profile-page .info-box .box > div {
+    min-width: 0;
     width: 100%;
   }
+    .profile-page .info-box .box > div:last-child {
+      width: fit-content;
+      margin: auto;
+    }
     .profile-page .info-box .box {
       padding: 20px 0;
     }
