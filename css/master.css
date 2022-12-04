@@ -740,9 +740,9 @@ background-color: rgb(34 197 94 / 20%);
   }
 }
 @media(min-width: 768px) {
-  .profile-page .avatar-box {
-      border-right: 1px solid #EEE;
-    }
+.profile-page .avatar-box {
+    border-right: 1px solid #EEE;
+  }
 }
 .profile-page .avatar-box img {
   width: 120px;
@@ -768,11 +768,15 @@ background-color: rgb(34 197 94 / 20%);
     padding: 10px;
   }
   .profile-page .avatar-box {
-    width: 100%;
+    max-width: 100%;
+    padding: 10px;
   }
+    .profile-page .avatar-box img {
+      width: 100px;
+    }
   .profile-page .info-box .box > div {
     min-width: 0;
-    width: 100%;
+    max-width: 100%;
   }
     .profile-page .info-box .box > div:last-child {
       width: fit-content;
@@ -788,11 +792,17 @@ background-color: rgb(34 197 94 / 20%);
     gap: 20px;
   }
   .other-data .skills {
-    width: 100%;
+    max-width: 100%;
+    padding: 15px 10px;
     margin: 0;
   }
+  .other-data .skills > div {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .other-data .activities {
-    width: 100%;
+    padding: 15px 10px;
+    max-width: 100%;
     margin: 0;
   }
   .other-data .activities .activity {
@@ -811,6 +821,11 @@ background-color: rgb(34 197 94 / 20%);
 }
 .other-data .skills {
   flex-grow: 1;
+}
+.other-data .skills > div {
+  padding: 15px 0;
+  display: flex;
+  gap: 5px;
 }
 .other-data .activities {
   flex-grow: 2;
