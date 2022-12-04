@@ -778,13 +778,14 @@ background-color: rgb(34 197 94 / 20%);
     min-width: 0;
     max-width: 100%;
   }
-    .profile-page .info-box .box > div:last-child {
-      width: fit-content;
-      margin: auto;
-    }
-    .profile-page .info-box .box {
-      padding: 20px 0;
-    }
+  .profile-page .info-box .box > div:last-child {
+    width: fit-content;
+    margin: auto;
+  }
+  .profile-page .info-box .box {
+    padding: 20px 0;
+    flex-direction: column;
+  }
 }
 @media(max-width: 767px) {
   .other-data {
