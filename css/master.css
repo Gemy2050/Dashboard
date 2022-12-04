@@ -838,3 +838,53 @@ background-color: rgb(34 197 94 / 20%);
   text-align: center;
 }
 /* End Profile */
+/* Start Projects */
+.projects-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media(max-width: 767px) {
+  .projects-page {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+  .projects-page p {
+    font-size: 14px;
+  }
+}
+.projects-page img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.projects-page img:not(:first-child) {
+  margin-left: -20px;
+}
+.projects-page .do {
+  justify-content: flex-end;
+}
+@media(max-width: 767px) {
+  .projects-page .do span:not(:last-child){
+    margin-bottom: 10px;
+  }
+}
+.projects-page .level {
+  height: 8px;
+  width: 250px;
+  background-color: #EEE;
+  border-radius: 6px;
+  overflow: hidden;
+}
+@media(max-width: 767px) {
+  .projects-page .level {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}
+.projects-page .level span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+/* End Projects */

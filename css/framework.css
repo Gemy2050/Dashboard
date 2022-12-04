@@ -25,6 +25,9 @@
 .d-grid {
   display: grid;
 }
+.gap-5 {
+  gap: 5px;
+}
 .gap-20 {
   gap: 20px;
 }
@@ -164,6 +167,9 @@
 }
 .border-eee {
   border: 1px solid #eee;
+}
+.b-top-eee {
+  border-top: 1px solid #EEE;
 }
 .b-bottom-eee {
   border-bottom: 1px solid #EEE;
