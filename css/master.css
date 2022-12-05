@@ -1053,6 +1053,11 @@ background-color: rgb(34 197 94 / 20%);
 .plans {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
+@media(max-width: 767px) {
+  .plans {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}
 .plans .plan .head {
   padding: 20px 0;
   text-align: center;
