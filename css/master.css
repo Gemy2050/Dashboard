@@ -902,6 +902,7 @@ background-color: rgb(34 197 94 / 20%);
 @media(max-width: 767px) {
   .courses {
     grid-template-columns: minmax(200px, 1fr);
+    margin: 10px;
   }
 }
 .courses .course {
