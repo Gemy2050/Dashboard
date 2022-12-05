@@ -10,6 +10,9 @@
 .d-flex {
   display: flex;
 }
+.align-start {
+  align-items: flex-start;
+}
 .align-center {
   align-items: center;
 }
@@ -135,6 +138,9 @@
 /* Start Position */
 .p-relative {
   position: relative;
+}
+.p-absolute {
+  position: absolute;
 }
 /* Start Font */
 .txt-c {

@@ -7,6 +7,7 @@
 body {
   font-family: 'Cairo', sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -973,6 +974,120 @@ background-color: rgb(34 197 94 / 20%);
   top: 50%;
   transform: translateY(-50%);
   font-size: 30px;
-  opacity: .3;
+  opacity: .2;
 }
 /* End Friends */
+/* Start Files */
+.files {
+  flex-direction: row-reverse;
+}
+@media(max-width: 767px) {
+  .files {
+    flex-direction: column;
+    margin: 10px;
+  }
+    .files .files-stats {
+      width: 100%;
+      padding: 10px;
+    }
+}
+.files .files-stats {
+  min-width: 260px;
+}
+.files .files-stats .box i {
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: #0077ff43;
+}
+.files .files-stats i.green {
+  background-color: #22c55e46;
+}
+.files .files-stats i.red {
+  background-color: #f334473b;
+}
+.files .files-stats i.orange {
+  background-color: #f59f0b3b;
+}
+.files .files-stats .size {
+  margin-left: auto;
+}
+.files .files-stats .upload {
+  padding: 10px;
+  display: block;
+  width: fit-content;
+  margin: auto;
+  font-size: 14px;
+}
+.files .files-stats .upload:hover i{
+    animation: move .8s infinite alternate;
+}
+.files-content {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.files-content .box img{
+  transition: .3s;
+}
+.files-content .box:hover img {
+  transform: rotate(4deg);
+}
+.files-content .box i {
+  left: 10px;
+  top: 10px;
+}
+.files-content .box img {
+  width: 60px;
+}
+@keyframes move{
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+/* End Files */
+/* Start Plans */
+.plans {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+.plans .plan .head {
+  padding: 20px 0;
+  text-align: center;
+  border: 4px solid white;
+  outline: 4px solid var(--green-color);
+}
+.plans .blue .head {
+  outline: 4px solid var(--blue-color);
+}
+.plans .red .head {
+  outline: 4px solid var(--red-color);
+}
+.plans .plan .head h3 {
+  font-size: 25px;
+}
+.plans .plan .head h2 {
+  font-size: 40px;
+  width: fit-content;
+  margin: 10px auto 0;
+}
+.plans .plan .head h2 span {
+  font-size: 24px;
+  left: -20px;
+  top: -5px;
+  font-weight: normal;
+}
+.plans .plan ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid #EEE;
+}
+.plans .plan ul li i:first-child {
+  margin-right: 10px;
+}
+.plans .plan ul li .help {
+  margin-left: auto;
+  color: var(--grey-color);
+}
+/* End Plans */
