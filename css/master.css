@@ -491,6 +491,7 @@ background-color: rgb(34 197 94 / 20%);
 /* Start Projects Table */
 .projects .responsive-table {
   overflow-x: auto;
+  width: 100%;
 }
 
 .projects table {
